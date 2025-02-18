@@ -1,16 +1,18 @@
 package com.techpuram.saascore.service;
 
-import com.example.techpuram.Entity.dto.EmailDTO;
-import com.example.techpuram.Entity.dto.Template;
+
 import jakarta.mail.MessagingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.mail.javamail.MimeMessageHelper; 
 import org.springframework.stereotype.Service;
- //jfd
+
+import com.techpuram.saascore.entity.EmailDTO;
+import com.techpuram.saascore.entity.Template;
+
 
 @Service
 public class EmailService {

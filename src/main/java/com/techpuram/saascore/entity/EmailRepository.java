@@ -1,10 +1,9 @@
-package com.techpuram.saascore.db;
+package com.techpuram.saascore.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository; // Importing JpaRepository for basic CRUD operations and additional JPA functionalities
 import org.springframework.data.jpa.repository.Query; // Importing @Query annotation for custom JPQL queries
 // Importing the Email entity
 
-import com.techpuram.saascore.entity.Email;
 
 import java.util.Optional; // Importing Optional for handling potentially null return values
 

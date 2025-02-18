@@ -1,3 +1,4 @@
+
 package com.techpuram.saascore.service;
 
 import jakarta.mail.*;
@@ -5,12 +6,16 @@ import jakarta.mail.event.MessageCountAdapter;
 import jakarta.mail.event.MessageCountEvent;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMultipart;
+
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.techpuram.Entity.dto.Email;
-import com.example.techpuram.Entity.dto.EmailRepository;
+import com.techpuram.saascore.entity.Email;
+
+import com.techpuram.saascore.entity.EmailRepository;
 import org.eclipse.angus.mail.imap.IMAPFolder;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

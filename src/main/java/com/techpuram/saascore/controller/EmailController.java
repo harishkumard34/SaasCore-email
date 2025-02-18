@@ -1,6 +1,6 @@
 package com.techpuram.saascore.controller;
 
-import com.techpuram.saascore.entity.EmailDTO;
+import com.techpuram.saascore.entity.EmailDTO;  // Ensure this import is here
 import com.techpuram.saascore.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.*;
 public class EmailController {
 
     @Autowired
-    private EmailService emailService;//service
+    private EmailService emailService;  // Service
 
     // POST endpoint to send an email
     @PostMapping("/send")
     public ResponseEntity<String> sendEmail(@RequestBody EmailDTO emailDTO) {
         try {
-            emailService.sendEmail(emailDTO);
+            emailService.sendEmail(emailDTO);  // Call to service to send email
             return ResponseEntity.status(HttpStatus.OK).body("Email sent successfully!");
         } catch (Exception e) {
             e.printStackTrace();
@@ -28,4 +28,5 @@ public class EmailController {
         }
     }
 }
+
  

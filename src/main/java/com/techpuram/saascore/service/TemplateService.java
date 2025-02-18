@@ -4,7 +4,7 @@ package com.techpuram.saascore.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.techpuram.saascore.db.Templaterep;
+import com.techpuram.saascore.entity.Templaterep;
 import com.techpuram.saascore.entity.Template;
 
 import java.util.List;

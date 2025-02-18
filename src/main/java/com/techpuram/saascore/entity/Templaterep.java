@@ -1,4 +1,4 @@
-package com.techpuram.saascore.db;
+package com.techpuram.saascore.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

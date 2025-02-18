@@ -1,0 +1,58 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+deploy.bat
+src/main/resources/static/_app/
+
+
+# SvelteKit build output
+src/UI/build/
+src/UI/.svelte-kit/
+src/UI/.vite/
+src/UI/node_modules/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+src/main/resources/application.properties
+
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# Logs
+*.log
+*.gz

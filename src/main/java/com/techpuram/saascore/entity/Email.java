@@ -1,0 +1,30 @@
+package com.techpuram.saascore.entity;
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "emails")
+public class Email {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String fromAddress;
+    private String toAddress;
+    private String subject;
+
+    @Column(length = 64000)
+    private String body;
+
+    private String ccAddress;
+
+
+    @Column(unique = true) // Ensure UIDs are unique
+    private String uid;
+
+   
+}
+
+
+

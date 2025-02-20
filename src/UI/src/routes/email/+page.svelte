@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { getAuthToken } from '$lib';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
 
@@ -90,6 +91,8 @@
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          
+        
         },
         body: JSON.stringify(emailData),
       });
@@ -135,6 +138,7 @@
         method: method,
         headers: {
           'Content-Type': 'application/json',
+          ...getAuthToken(),
         },
         body: JSON.stringify({
           subject,
@@ -183,6 +187,7 @@
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
+          ...getAuthToken(),
         },
         body: JSON.stringify({
           subject,
